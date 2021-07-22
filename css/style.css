@@ -1,4 +1,10 @@
+table * {
+  border: thin solid black;
+}
 
+table {
+  border-collapse: collapse;
+}
 
 img {
   width: 200px;

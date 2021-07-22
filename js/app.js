@@ -104,11 +104,11 @@ function addStores(location, minCust, maxCust, cookiesPerCust) {
 }
 
 const allStores = [];
-const storeHours = ['6a', '7a', '8a', '9a', '10a', '11a', '12p', '1p', '2p', '3p', '4p', '5p', '6p', '7p'];
-addStores('Seattle', 23, 65, 6.3);
-addStores('Toyko', 3, 24, 1.2);
-addStores('Dubai', 11, 38, 3.7);
-addStores('Paris', 20, 38, 2.3);
-addStores('Lima', 2, 16, 4.6);
+const storeHours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
+addStores(' Seattle ', 23, 65, 6.3);
+addStores(' Toyko ', 3, 24, 1.2);
+addStores(' Dubai ', 11, 38, 3.7);
+addStores(' Paris ', 20, 38, 2.3);
+addStores(' Lima ', 2, 16, 4.6);
 storeData();
 makeTable();
