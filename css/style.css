@@ -1,3 +1,41 @@
+
+body {
+  background-color:rgb(179, 166, 143) ;
+}
+
+header {
+  background-color: rgb(199, 226, 235);
+  border-style: double;
+  border-width: 15px;
+  color:rgb(131, 108, 78);
+  text-align:center
+
+}
+
+header #img1 {
+  float: left;
+  width: 150px;
+  margin-left: 20px;
+  margin-top: -65px;
+
+}
+
+header #img2 {
+  float: right;
+  width: 150px;
+  margin-right: 20px;
+  margin-top: -65px;
+
+}
+
+li {
+  display: inline;
+ 
+
+}
+
+
+/* For Sales Table
 table * {
   border: thin solid black;
 }
@@ -8,4 +46,22 @@ table {
 
 img {
   width: 200px;
-}
+} */
+
+/* 1. A custom Google font for highlights
+
+2. A specified standard sans-serif web font for data (such as Arial, Verdana, or Helvetica)
+
+3. A specified standard serif web font for text (such as Georgia, Times, etc.)
+
+4. Specified different font colors for all three font usages
+
+5. A background color for the default page background (make sure font colors have good contrast and are readable on this background)
+
+6. A different background color for elements such boxes and tables (so make sure the font colors contrast against this well, too!)
+
+7. Anything else you’d like to add related to style. But remember: simplicity, clarity, and consistency are good things in design.
+
+8. Be thoughtful about layout and overall organization of the page.
+
+9. Include all of the typical stuff that you’ll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user. */
