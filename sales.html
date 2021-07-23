@@ -4,12 +4,43 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Cookie Stand</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    </head>
+        <link href="css/reset.css" rel="salessheet"/>
+        <link href="css/sales.css" rel="stylesheet" type="text/css"/>
+            </head>
     <body>
-        <header></header>
+        <header>
+            <h1>Pat's Cookie Stand</h1>
+            <img id="img1" src=".img/salmon.png"></img>
+            <img id="img2" src=".img/salmon.png"></img>
+        </header>
         <main>
+            <nav>
+                <ul>
+                    <li><button>Home</button></li>
+                    <li><button>About Us</button></li>
+                    <li><button>Contact Us</button><li>
+                    <li><button>Locations</button></li>
+                    <li><button>Sales</button></li>
+                </ul>
+            </nav>
             <div id="store">
+                <form id='Cookie Store'>
+                    <fieldset>
+                        <legend>Store Sales Forcast</legend>
+                        <label>Location
+                            <input type="text" name="location">
+                        </label>Min. Customers Per Hour
+                        <input type="number" name="minCustHr">
+                    </label>
+                    <label>Max Customers Per Hour
+                        <input type="number" name="maxCustHr">
+                    </label>
+                    <label>Cookies Purchesed Per Hour
+                        <input type="number" name="cookiePerCust">
+                    </label>
+                    <button type="submit">Submit Data</button>
+                </fieldset>
+            </form>  
             </div>
         </main>
         <footer></footer>

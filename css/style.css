@@ -28,14 +28,29 @@ header #img2 {
 
 }
 
-li {
-  display: inline;
- 
+div {
+  display: flex;
+}
+
+img{
+  border-radius: 20%;
 
 }
 
+ul{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+li {
+  display: inline;
+ 
+}
+
+
 
 /* For Sales Table
+
 table * {
   border: thin solid black;
 }

@@ -1,0 +1,80 @@
+body {
+    background-color:rgb(179, 166, 143) ;
+  }
+  
+header {
+    background-color: rgb(199, 226, 235);
+    border-style: double;
+    border-width: 15px;
+    color:rgb(131, 108, 78);
+    text-align:center
+  
+  }
+  
+header #img1 {
+    float: left;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: -65px;
+  
+  }
+  
+header #img2 {
+    float: right;
+    width: 150px;
+    margin-right: 20px;
+    margin-top: -65px;
+
+  }
+
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+  li {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+
+  }
+
+  
+  table * {
+      border: medium solid black;
+      border-width: 5px;
+    }
+    
+    table {
+        border-collapse: collapse;
+        background-color: rgb(199, 226, 235);
+        margin-top: 50px ;
+        margin-left: 20px
+    }
+    
+    img {
+        width: 200px;
+    } 
+
+    form {
+        margin: 40px
+
+    }
+    
+    fieldset {
+        border-radius: 50px;
+        border-right: 60px;
+        border-left: 60px;
+        border-width: 10px;
+        margin-right: 1000px;
+        padding: 40px;
+    
+    }
+
+    input {
+        display: block;
+        text-align: center;
+
+     }
+  
