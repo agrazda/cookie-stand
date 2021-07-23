@@ -12,6 +12,7 @@ function Store (location, minCust, maxCust, cookiesPerCust) {
         for (let i = 0; i < storeHours.length; i++) {
             let custPerHour = Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
             this.salesPerHr[i] = Math.floor(custPerHour * this.cookiesPerCust);   
+            console.log(this.salesPerHr[i])
         }
     };
     this.getCookieTotals = function() {
@@ -108,7 +109,7 @@ function handleSubmit(e) {
     const maxCust = e.target.maxCustHr.value;
     const cookiesPerCust = e.target.cookiePerCust.value;
     
-    let newStore = new Store(location, minCust, maxCust,cookiesPerCust);
+    let newStore = addStores(location, minCust, maxCust, cookiesPerCust);
     storeData();
     // newStore.getCookieTotals;
     const tableElem = document.getElementsByTagName('tbody')[0];
@@ -117,13 +118,13 @@ function handleSubmit(e) {
 
 
 
-
-
 // // Store.AllStores[i].cookiesPerHour[hourIndex]
 
 function addStores(location, minCust, maxCust, cookiesPerCust) {
     const newStore = new Store(location, minCust, maxCust, cookiesPerCust);
     allStores.push(newStore);
+    return newStore
+    // return 'hello'
 }
 
 const allStores = [];
