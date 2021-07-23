@@ -96,6 +96,29 @@ function renderHourTotals(rowElem) {
     makeElement('td', rowElem, dailyTotal);
 }
 
+const formElem= document.getElementById('Cookie Store')
+
+formElem.addEventListener('submit', handleSubmit); 
+   
+function handleSubmit(e) { 
+    e.preventDefault();
+
+    const location = e.target.location.value;
+    const minCust = e.target.minCustHr.value;
+    const maxCust = e.target.maxCustHr.value;
+    const cookiesPerCust = e.target.cookiePerCust.value;
+    
+    let newStore = new Store(location, minCust, maxCust,cookiesPerCust);
+    storeData();
+    // newStore.getCookieTotals;
+    const tableElem = document.getElementsByTagName('tbody')[0];
+    newStore.renderStore(tableElem);
+};
+
+
+
+
+
 // // Store.AllStores[i].cookiesPerHour[hourIndex]
 
 function addStores(location, minCust, maxCust, cookiesPerCust) {
