@@ -1,6 +1,7 @@
 
 body {
   background-color:rgb(179, 166, 143) ;
+  width: 1024px
 }
 
 header {
@@ -8,7 +9,9 @@ header {
   border-style: double;
   border-width: 15px;
   color:rgb(131, 108, 78);
-  text-align:center
+  text-align:center;
+  font-family: 'Merienda', cursive;
+  font-size: 20px;
 
 }
 
@@ -16,7 +19,7 @@ header #img1 {
   float: left;
   width: 150px;
   margin-left: 20px;
-  margin-top: -65px;
+  margin-top: -80px;
 
 }
 
@@ -24,16 +27,39 @@ header #img2 {
   float: right;
   width: 150px;
   margin-right: 20px;
-  margin-top: -65px;
+  margin-top: -80px;
 
+}
+main {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  color: rgb(199, 226, 235);
+  text-shadow: 2px 2px 2px #000;
 }
 
 div {
   display: flex;
+  justify-content: space-around;
 }
 
-img{
+button {
+  background-color: rgb(199, 226, 235);
+  margin: 10px;
+  border-radius: 30%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:rgb(131, 108, 78)
+
+}
+
+p {
+  text-align: center;
+  margin: 15px;
+  padding: 15px
+}
+
+img {
   border-radius: 20%;
+  margin-bottom: 20px;
 
 }
 
@@ -45,6 +71,14 @@ ul{
 li {
   display: inline;
  
+}
+
+footer {
+  background-color: rgb(199, 226, 235);
+  border-style: double;
+  border-width: 15px;
+  color:rgb(131, 108, 78);
+  margin-top: 10px;
 }
 
 
